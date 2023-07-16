@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗞️ News Website 📰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar" class="flex">
+        <div id="logo">🗞️ NEWS 🗞️</div>
+        <div class="menu">
+            <a href="#" class="nav-item" id="ipl" onclick="onNavItmClick('ipl')" >IPL</a>
+            <a href="#" class="nav-item" id="finance" onclick="onNavItmClick('finance')" >Finance</a>
+            <a href="#" class="nav-item" id="politics" onclick="onNavItmClick('politics')" >Politics</a>
+            <a href="#" class="nav-item" id="Technology" onclick="onNavItmClick('Technology')" >Technology</a>
+        </div>
+        <form id="searcForm" >
+            <input type="search" id="searchNews">
+            <button id="searchBtn">Search</button>
+        </form>
+    </div>
+    <!-- main -->
+    <main>
+        <div id="cards-container" class="flex">
+
+        </div>
+
+    </main>
+    <template id="news-template">
+        <div class="card">
+            <div class="card-header">
+                <img id="card-img" src="https://m.media-amazon.com/images/M/MV5BMGY5MzU3MzItNDBjMC00YjQzLWEzMTUtMGMxMTEzYjhkMGNkXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg" alt="newsError.." >
+            </div>
+        <div class="card-content">
+            <h3 id="newsTitle">This is the Title</h3>
+            <h5 class="NewsSource " id="newsSource">End Gadget 26/3/2002</h5>
+            <p class="newsPera " id="newsPera">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, quaerat, quasi, quibusdam, quidem, quod, quaerat, quasi, quibusdam, quidem, quod, quaerat, quasi, quibusdam, quidem, quod, quaerat, quasi, quibusdam, quidem, quod, quaerat, quasi,</p>
+        </div>
+    </div>  
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>

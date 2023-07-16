@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#navbar{
+    background-color: gray;
+    box-shadow:  0 0 4px rgba(88, 88, 88, 0.945);
+    position: fixed;
+    width: 100%;   
+    top: 0;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2rem;
+    color: aliceblue;
+
+}
+.menu a:hover{
+    color: rgb(187, 171, 171); 
+}
+.menu a:active{
+    color: rgb(230, 71, 71);
+}
+
+#logo{
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    margin:.5rem .5rem ;
+}
+
+#searchForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#searchNews{
+    padding: .5rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin: .5rem;
+}
+
+#searchNews:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    color: white;
+    background-color: black;
+}
+#searchBtn{
+    padding:.5rem;
+    border-radius:.4rem;
+    font-size: 1rem;
+    border: none;
+}
+#searchBtn:hover{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    color: white;
+    background-color: black;
+}
+
+.nav-item.active{
+    color: rgb(3, 3, 3);
+}
+
+
+/* for cards */
+main{
+    padding-block: 20px;
+    margin: 8rem 7rem;
+}
+
+
+.card-content p,.card-content h5{
+    margin-top: .5rem;
+} 
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow:  0 0 4px gainsboro;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem;
+
+}
+.card:hover{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    background-color:gainsboro;
+    transform: translateY(-2px);
+}
+
+.card-header img{
+    width: 100%;  
+    height: 18rem;
+}
+.card-content{
+    padding: 12px;
+}  
+
+.news-source{
+    margin-block: 12px;
+}
+
+ 
